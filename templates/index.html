@@ -20,9 +20,15 @@
         main {
             flex: 1; /* Chiếm toàn bộ không gian còn lại */
             display: flex;
-            justify-content: center; /* căn giữa ngang */
-            align-items: center;     /* căn giữa dọc */
+            flex-direction: column;
+            align-items: center;
             padding: 20px;
+            background-color: #f4f9ff; /* màu nền trùng web cha */
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #005f99;
+            text-align: center;
         }
         .students {
             display: grid;
@@ -46,16 +52,18 @@
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #f4f9ff; /* màu giống web cha l-p-9c */
+            background-color: #f4f9ff; /* màu nền trùng web cha */
             color: #555;
-            width: 100%; /* chiều dài bằng web cha */
+            width: 100%;
             box-sizing: border-box;
-            border-top: 1px solid #ddd; /* tùy chọn viền nhẹ */
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
     <main>
+        <h2>Danh sách lớp:</h2> <!-- Tiêu đề thêm vào -->
+
         <div class="students">
             <!-- 38 học sinh -->
             <div class="student">L.Thái An</div>
