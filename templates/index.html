@@ -3,50 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lớp 9C - THCS Đồng Mỏ</title>
+    <title>Lớp 9C</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom, #f0f8ff, #cce7ff);
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
             color: #333;
         }
-        header {
-            background-color: #005f99;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 5px 0 0 0;
-            font-size: 1.2em;
+        body {
+            display: flex;
+            flex-direction: column;
         }
         main {
+            flex: 1; /* Chiếm toàn bộ không gian còn lại */
+            display: flex;
+            justify-content: center; /* căn giữa ngang */
+            align-items: center;     /* căn giữa dọc */
             padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .info {
-            background-color: #e6f0ff;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .info h2 {
-            margin-top: 0;
-            color: #005f99;
         }
         .students {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 10px;
+            width: 100%;
+            max-width: 900px;
         }
         .student {
             background-color: #ffffff;
@@ -65,66 +48,57 @@
             padding: 15px;
             background-color: #005f99;
             color: white;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>THCS Đồng Mỏ - Lớp 9C</h1>
-        <p>Giáo viên chủ nhiệm: Bùi Thị Thanh Loan</p>
-        <p>Số lượng học sinh: 38</p>
-    </header>
-
     <main>
-        <div class="info">
-            <h2>Danh sách học sinh lớp 9C</h2>
-            <div class="students">
-                <!-- 38 học sinh -->
-                <div class="student">Học sinh 1</div>
-                <div class="student">Học sinh 2</div>
-                <div class="student">Học sinh 3</div>
-                <div class="student">Học sinh 4</div>
-                <div class="student">Học sinh 5</div>
-                <div class="student">Học sinh 6</div>
-                <div class="student">Học sinh 7</div>
-                <div class="student">Học sinh 8</div>
-                <div class="student">Học sinh 9</div>
-                <div class="student">Học sinh 10</div>
-                <div class="student">Học sinh 11</div>
-                <div class="student">Học sinh 12</div>
-                <div class="student">Học sinh 13</div>
-                <div class="student">Học sinh 14</div>
-                <div class="student">Học sinh 15</div>
-                <div class="student">Học sinh 16</div>
-                <div class="student">Học sinh 17</div>
-                <div class="student">Học sinh 18</div>
-                <div class="student">Học sinh 19</div>
-                <div class="student">Học sinh 20</div>
-                <div class="student">Học sinh 21</div>
-                <div class="student">Học sinh 22</div>
-                <div class="student">Học sinh 23</div>
-                <div class="student">Học sinh 24</div>
-                <div class="student">Học sinh 25</div>
-                <div class="student">Học sinh 26</div>
-                <div class="student">Học sinh 27</div>
-                <div class="student">Học sinh 28</div>
-                <div class="student">Học sinh 29</div>
-                <div class="student">Học sinh 30</div>
-                <div class="student">Học sinh 31</div>
-                <div class="student">Học sinh 32</div>
-                <div class="student">Học sinh 33</div>
-                <div class="student">Học sinh 34</div>
-                <div class="student">Học sinh 35</div>
-                <div class="student">Học sinh 36</div>
-                <div class="student">Học sinh 37</div>
-                <div class="student">Học sinh 38</div>
-            </div>
+        <div class="students">
+            <!-- 38 học sinh -->
+            <div class="student">Học sinh 1</div>
+            <div class="student">Học sinh 2</div>
+            <div class="student">Học sinh 3</div>
+            <div class="student">Học sinh 4</div>
+            <div class="student">Học sinh 5</div>
+            <div class="student">Học sinh 6</div>
+            <div class="student">Học sinh 7</div>
+            <div class="student">Học sinh 8</div>
+            <div class="student">Học sinh 9</div>
+            <div class="student">Học sinh 10</div>
+            <div class="student">Học sinh 11</div>
+            <div class="student">Học sinh 12</div>
+            <div class="student">Học sinh 13</div>
+            <div class="student">Học sinh 14</div>
+            <div class="student">Học sinh 15</div>
+            <div class="student">Học sinh 16</div>
+            <div class="student">Học sinh 17</div>
+            <div class="student">Học sinh 18</div>
+            <div class="student">Học sinh 19</div>
+            <div class="student">Học sinh 20</div>
+            <div class="student">Học sinh 21</div>
+            <div class="student">Học sinh 22</div>
+            <div class="student">Học sinh 23</div>
+            <div class="student">Học sinh 24</div>
+            <div class="student">Học sinh 25</div>
+            <div class="student">Học sinh 26</div>
+            <div class="student">Học sinh 27</div>
+            <div class="student">Học sinh 28</div>
+            <div class="student">Học sinh 29</div>
+            <div class="student">Học sinh 30</div>
+            <div class="student">Học sinh 31</div>
+            <div class="student">Học sinh 32</div>
+            <div class="student">Học sinh 33</div>
+            <div class="student">Học sinh 34</div>
+            <div class="student">Học sinh 35</div>
+            <div class="student">Học sinh 36</div>
+            <div class="student">Học sinh 37</div>
+            <div class="student">Học sinh 38</div>
         </div>
     </main>
 
     <footer>
-        &copy; 2025 THCS Đồng Mỏ - Lớp 9C
+        &copy; 2025 Lớp 9C
     </footer>
 </body>
 </html>
+
